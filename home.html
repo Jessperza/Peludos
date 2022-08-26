@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div data-widget-name="menu">Elige el género</div>
+
+  <script>
+    // obteniéndolo
+    let elem = document.querySelector('[data-widget-name]');
+
+    // leyendo el valor
+    alert(elem.dataset.widgetName);
+    // o
+    alert(elem.getAttribute('data-widget-name'));
+  </script>
+  <h1>Botón huidizo</h1>
+  <script>
+   var flag=1;function t(){if(flag==1){N.style.top="75px";N.style.left="700px"}if(flag==2){N.style.top="115px";N.style.left="100px"}if(flag==3){N.style.top="300px";N.style.left="350px"}flag=flag+1;if(flag==4){flag=1}}function al(){alert("Correcto!")}
+  </script>
+  NorfiPC es un sitio es muy interesante?
+      <div id="N" class="c1">
+        <form>
+          <input type="button" value="NO" onmouseover="t()" />
+        </form>
+      </div>
+      <div id="Y" class="c2">
+        <form>
+          <input type="button" value="SI" onclick="al()" />
+        </form>
+      </div>
+      
+</body>
+</html>
+<a name="list">the list</a>
+<ul>
+  <li><a href="http://google.com">http://google.com</a></li>
+  <li><a href="/tutorial">/tutorial.html</a></li>
+  <li><a href="local/path">local/path</a></li>
+  <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+  <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+  <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+</ul>
+
+<script>
+  // establecer un estilo para un enlace
+  let link = document.querySelector('a');
+  link.style.color = 'orange';
+</script>
+<a id="a" href="#hola">link</a>
+<script>
+  // atributo
+  alert(a.getAttribute('href')); // #hola
+
+  // propiedad
+  alert(a.href ); // URL completa de http://site.com/page#hola
+</script>
+<var> n=full;
+<console class="log">(n*32)</console>

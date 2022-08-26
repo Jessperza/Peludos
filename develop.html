@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv=  «Content-Type» content = «text / html; charset = utf-8»>
+    <title>Peludos+</title>
+    <meta name='keywords' content='home,perfil,publicaciones'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+      <p>
+        "Bienvenido a la red social donde te vas a rodear de fotos adorables y curiosas de nuestras mascotas"
+      </p>
+      <h1>
+        Peludos+
+      </h1>
+      <h2>
+        home
+      </h2>
+      <body something="non-standard">
+        <script>
+          alert(document.body.getAttribute('something')); // no estándar
+        </script>
+      </body>
+      undefined
+      <h2>
+        perfil
+      </h2>
+      <h3>
+        publicaciones <a> https://www.tudiscovery.com/articulo/gatos-domesticos-amigos-misteriosos-e-independientes</a>
+      </h3>
+      <script>
+        alert( elem.getAttribute('About') ); // (1) 'Elephant', leyendo
+    
+        elem.setAttribute('Test', 123); // (2), escribiendo
+    
+        alert( elem.outerHTML ); // (3), ver si el atributo está en HTML (sí)
+    
+        for (let attr of elem.attributes) { // (4) listar todo
+          alert( `${attr.name} = ${attr.value}` );
+          <input>
+
+<script>
+  let input = document.querySelector('input');
+
+  // atributo => propiedad
+  input.setAttribute('id', 'id');
+  alert(input.id); // id (actualizado)
+
+  // propiedad => atributo
+  input.id = 'newId';
+  alert(input.getAttribute('id')); // newId (actualizado)
+</script>
+<input id="input" type="checkbox" checked> checkbox
+
+<script>
+  alert(input.getAttribute('checked')); // el valor del atributo es: string vacía
+  alert(input.checked); // el valor de la propiedad es: true
+</script>
+<!-- marque el div para mostrar "nombre" aquí -->
+<div show-info="nombre"></div>
+<!-- y "edad" aquí -->
+<div show-info="edad"></div>
+
+<script>
+ // el código encuentra un elemento con la marca y muestra lo que se solicita
+  let user = {
+    nombre: "Pete",
+    edad: 25
+  };
+
+  for(let div of document.querySelectorAll('[show-info]')) {
+    // inserta la información correspondiente en el campo
+    let field = div.getAttribute('show-info');
+    div.innerHTML = user[field]; // primero Pete en "nombre", luego 25 en "edad"
+  }
+</script>
+</body>
+</html>

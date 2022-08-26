@@ -1,0 +1,72 @@
+<style>
+    /* los estilos se basan en el atributo personalizado "order-state" */
+    .order[order-state="nuevo"] {
+      color: green;
+    }
+  
+    .order[order-state="pendiente"] {
+      color: blue;
+    }
+  
+    .order[order-state="cancelado"] {
+      color: red;
+    }
+  </style>
+  
+  <div class="order" order-state="nuevo">
+    Un nuevo pedido.
+  </div>
+  
+  <div class="order" order-state="pendiente">
+    Un pedido pendiente.
+  </div>
+  
+  <div class="order" order-state="cancelado">
+    Un pedido cancelado
+  </div>
+  <body data-about="Elefante">
+    <script>
+      alert(document.body.dataset.about); // Elefante
+    </script>
+    <style>
+        .order[data-order-state="nuevo"] {
+          color: green;
+        }
+      
+        .order[data-order-state="pendiente"] {
+          color: blue;
+        }
+      
+        .order[data-order-state="cancelado"] {
+          color: red;
+        }
+      </style>
+      
+      <div id="order" class="order" data-order-state="nuevo">
+        Una nueva orden.
+      </div>
+      
+      <script>
+        // leer
+        alert(order.dataset.orderState); // nuevo
+      
+        // modificar
+        order.dataset.orderState = "pendiente"; // (*)
+      </script>
+      <!DOCTYPE html>
+      <html>
+      <body>
+      
+        <div data-widget-name="menu">Elige el género</div>
+      
+        <script>
+          // obteniéndolo
+          let elem = document.querySelector('[data-widget-name]');
+      
+          // leyendo el valor
+          alert(elem.dataset.widgetName);
+          // o
+          alert(elem.getAttribute('data-widget-name'));
+        </script>
+      </body>
+      </html>
